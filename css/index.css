@@ -1,0 +1,169 @@
+* {
+    scroll-behavior: smooth;
+    color: black;
+    font-family: "JetBrains Mono", monospace;
+}
+
+#main {
+    display: block;
+    padding: 0 10%;
+    scroll-behavior: smooth;
+}
+
+#landing {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-top: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    min-height: 50vh;
+}
+
+.headshot {
+    margin-top: 1rem;
+    width: 400px;
+    border-radius: 50px;
+}
+
+.intro {
+    display: inline-block;
+    text-align: center;
+}
+
+h2 {
+
+    font-size: 30px;
+    font-weight: bold;
+    /* display: block; */
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    text-align: center;
+}
+
+.h1 {
+    text-align: center;
+    display: block;
+}
+
+#landing h1 {
+    font-size: 40px;
+}
+
+/* @keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+} */
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+
+.type {
+    border-right: 4px solid black;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+#about {
+    padding-top: 8rem;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 35px;
+    padding: 0;
+}
+
+p {
+    margin-top: 3rem;
+    font-size: 20px;
+}
+
+#about h2 {
+    margin-top: 5rem;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 3rem;
+}
+
+.skills h3 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+
+.skills div {
+    display: inline-block;
+    
+}
+
+#experiences {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+article {
+    margin-top: 2rem;
+    background-color: black;
+    text-align: left;
+    padding: 3rem;
+    border: solid;
+    border-color: white;
+    border-width: 0px 4px 4px 0;
+    box-shadow: 10px 10px;
+}
+
+article h3,
+article h3 a,
+article h4 {
+    color: white;
+    text-decoration: none;
+}
+
+article h3 a {
+    cursor: pointer;
+}
+
+article h3, article h3 a {
+    font-size: 25px;
+    font-weight: bold
+}
+
+article:hover {
+    transform: scale(1.10);
+}
+
+h4 {
+    margin-top: 5px;
+    /* font-weight: bold; */
+}
+
+article ul {
+    
+    margin-left: 2rem;
+    list-style-type: circle;
+}
+
+article ul li {
+    color: white;
+    margin-top: 1rem;
+}

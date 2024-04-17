@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+h1 {
+    padding-left: 50px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 50px;
+    font-weight: 500;
+    top: 0;
+}
+
+.headerGrid{
+    /* display: block; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: baseline;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    padding-top: 40px;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    top: 0;
+    padding: 2rem;
+    position: sticky;
+    transition: 0.6s;
+
+}
+
+nav li a {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 23px;
+    color: black;
+    margin: 0 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    transition: border-bottom 0.2s;
+}
+
+nav li a:hover,
+nav li a:focus {
+    border-bottom: 5px solid black;
+    border-radius: 2.5px;
+    font-weight: bold;
+}
+
+.active {
+    border-bottom: 5px solid black;
+    border-radius: 2.5px;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.logos {
+    margin: auto;
+    width: 93%;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    bottom: 0px;
+}
+
+footer div img {
+    cursor: pointer;
+}
+
+.imgs {
+    width: 25px;
+    margin-right: 10px;
+}
