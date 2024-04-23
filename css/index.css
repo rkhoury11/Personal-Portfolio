@@ -263,25 +263,13 @@ article ul li {
     background-color: black;
     transform: rotateY(180deg);
     overflow: scroll;
-    /* -ms-overflow-style: none; */
-    /* IE and Edge */
-    /* scrollbar-width: none; */
-    /* Firefox */
+
 }
 
 .project-card-back::-webkit-scrollbar {
     display: none;
 }
 
-/* .project-card-back div { */
-/* padding: 2rem; */
-/* display: flex; */
-/* flex-wrap: wrap;
-    align-items: center;
-    justify-content: center; */
-/* overflow: hidden; */
-/* font-size: 1rem; */
-/* } */
 
 .project-card-back h2,
 .project-card-back p {
@@ -327,11 +315,6 @@ footer {
 
 }
 
-.logos {
-    /* margin: auto; */
-    /* width: 50%; */
-    /* border-bottom: 2px solid black; */
-}
 
 footer .imgs {
     position: relative;
