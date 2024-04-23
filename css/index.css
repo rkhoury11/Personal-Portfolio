@@ -4,6 +4,10 @@
     font-family: "JetBrains Mono", monospace;
 }
 
+body {
+    /* background-color: rgb(15, 23, 42);x */
+}
+
 #main {
     display: block;
     padding: 0 10%;
@@ -12,7 +16,7 @@
 
 #landing {
     display: flex;
-    gap: 2rem;
+    gap: 6rem;
     align-items: center;
     padding-top: 0;
     flex-wrap: wrap;
@@ -23,7 +27,7 @@
 
 .headshot {
     margin-top: 1rem;
-    width: 400px;
+    width: 350px;
     border-radius: 50px;
 }
 
@@ -53,19 +57,13 @@ h2 {
     font-size: 40px;
 }
 
-/* @keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-} */
-
 @keyframes blink-caret {
-    from, to {
+
+    from,
+    to {
         border-color: transparent;
     }
+
     50% {
         border-color: black;
     }
@@ -76,9 +74,27 @@ h2 {
     animation: blink-caret 0.75s step-end infinite;
 }
 
+.mainAbout {
+    margin-top: 20px;
+    border-top: 2px solid black;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.mainAbout p:first-child {
+    margin-top: 20px;
+}
+
+/* about section */
+
 #about {
-    padding-top: 8rem;
+    padding-top: 6rem;
     text-align: center;
+}
+
+section {
+    animation: fadein 2s linear;
+    transition: opacity 2s ease;
 }
 
 section h1 {
@@ -113,8 +129,12 @@ p {
 
 .skills div {
     display: inline-block;
-    
+
 }
+
+
+/* experiences section */
+
 
 #experiences {
     text-align: center;
@@ -143,7 +163,8 @@ article h3 a {
     cursor: pointer;
 }
 
-article h3, article h3 a {
+article h3,
+article h3 a {
     font-size: 25px;
     font-weight: bold
 }
@@ -158,7 +179,7 @@ h4 {
 }
 
 article ul {
-    
+
     margin-left: 2rem;
     list-style-type: circle;
 }
@@ -168,6 +189,181 @@ article ul li {
     margin-top: 1rem;
 }
 
-#experiences h2 {
+#experiences h2,
+#about h2,
+#projects h2 {
     font-size: 35px;
+}
+
+
+/* projects section */
+
+#projects {
+    margin-top: 5rem;
+}
+
+
+#projects img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#projects .cards {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+.project-card {
+    background-color: transparent;
+    height: 22rem;
+    flex: 1 0 48%;
+    box-sizing: border-box;
+    margin: 1%;
+    perspective: 1000px;
+    border-radius: 16px;
+    overflow: hidden;
+    flex-basis: 100%;
+
+}
+
+@media (min-width: 1024px) {
+    .project-card {
+        flex-basis: auto;
+        min-width: 45%;
+        flex-wrap: wrap;
+
+    }
+}
+
+.project-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.project-card:hover .project-card-inner {
+    transform: rotateY(180deg);
+}
+
+.project-card-front,
+.project-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* -webkit-backface-visibility: hidden; */
+    backface-visibility: hidden;
+}
+
+.project-card-back {
+    background-color: black;
+    transform: rotateY(180deg);
+    overflow: scroll;
+    /* -ms-overflow-style: none; */
+    /* IE and Edge */
+    /* scrollbar-width: none; */
+    /* Firefox */
+}
+
+.project-card-back::-webkit-scrollbar {
+    display: none;
+}
+
+/* .project-card-back div { */
+/* padding: 2rem; */
+/* display: flex; */
+/* flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; */
+/* overflow: hidden; */
+/* font-size: 1rem; */
+/* } */
+
+.project-card-back h2,
+.project-card-back p {
+    padding: 5px;
+    margin: 0;
+    color: white;
+}
+
+.project-card-back h2,
+.project-card-back div {
+    display: inline-block;
+}
+
+.tag {
+    display: inline-block;
+    position: relative;
+    border-radius: 2rem;
+    margin: 0.5rem;
+    padding: 1rem !important;
+    background: white;
+    box-shadow: 2px 2px;
+    font-weight: bold;
+    transition: 0.6s;
+    font-size: 1rem;
+}
+
+.tag:hover {
+    background-color: whitesmoke;
+    transform: scale(1.2);
+}
+
+.project-card-back .github {
+    width: 20px;
+}
+
+
+/* links section */
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    margin-top: 6rem;
+
+}
+
+.logos {
+    /* margin: auto; */
+    /* width: 50%; */
+    /* border-bottom: 2px solid black; */
+}
+
+footer .imgs {
+    position: relative;
+    width: 80px;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    align-items: center;
+
+    
+}
+
+#resume, #email {
+    width: 150px;
+    cursor: pointer;
+}
+
+footer .imgs:hover {
+    top: -10px;
+}
+
+footer div {
+    height: 200px;
+    width: 100%;
+}
+
+.logos h2 {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#resume {
+    grid-column-start: 2;
 }

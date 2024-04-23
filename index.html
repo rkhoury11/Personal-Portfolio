@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
@@ -18,13 +19,17 @@
 
 
     <div class="headerGrid">
-        <h1>Rafael Khoury</h1>
+        <header>
+            <h1>Rafael Khoury</h1>
+        </header>
+        
         <nav>
             <ul>
                 <li><a href="#main" tabindex="0">Home</a></li>
                 <li><a href="#about" tabindex="0">About</a></li>
                 <li><a href="#experiences" tabindex="0">Experience</a></li>
                 <li><a href="#projects" tabindex="0">Projects</a></li>
+                <li><a href="#links" tabindex="0">Links</a></li>
             </ul>
         </nav>
     </div>
@@ -37,7 +42,7 @@
             <div class="intro">
                 <h2>Hello!👋 My name is</h2>
                 <h1>Rafael Khoury</h1>
-                <h2 class="type">apsiring Full Stack Developer</h2>
+                <h2 class="type">aspiring Full Stack Developer</h2>
             </div>
             <div class="box">
                 <img class="headshot" src="images/headshot.jpeg" alt="professional headshot">
@@ -46,26 +51,29 @@
 
         <section id="about">
             <h1>About Me</h1>
-            <p>
-                Hey! I'm Rafael Khoury. I am a Brazilian student at the University of Michigan majoring in Computer
-                Science in the College of Engineering, currently as a junior. I'm looking for a career in full stack
-                development, mobile dev, game dev, or XR dev.
-            </p>
-            <p>
-                Outside of the classroom, I am constantly trying to learn new things and take on interesting and
-                challenging projects. I speak four languages - English, Portuguese, Spanish, and French. Previous to
-                Computer Science, I also completed 2 years of Mechanical Engineering coursework, and had two internship
-                experiences in the automotive industry. Recently, I have attended two in-person hackathons and plan to
-                hunt for more! I really enjoy developing projects both independently and for class, and I'm constantly
-                looking for new things to create.
-            </p>
-            <p>
-                In my spare time, I love to play soccer, go to the gym, and hang out with my friends. During my time in
-                high school, I was lucky to be part of the Varsity Soccer All-State First Team. I also enjoy playing the
-                guitar, listening to music, and watching TV (a lot!). Recently I've gotten into the habit of reading
-                more and more. My favorite types of books are fiction and self-improvement. Currently, I'm working my
-                way through the Game of Thrones series, and Atomic Habits.
-            </p>
+            <div class="mainAbout">
+                <p>
+                    Hey! I'm Rafael Khoury. I am a Brazilian student at the University of Michigan majoring in Computer
+                    Science in the College of Engineering, currently as a junior. I'm looking for a career in full stack
+                    development, mobile dev, game dev, or XR dev.
+                </p>
+                <p>
+                    Outside of the classroom, I am constantly trying to learn new things and take on interesting and
+                    challenging projects. I speak four languages - English, Portuguese, Spanish, and French. Previous to
+                    Computer Science, I also completed 2 years of Mechanical Engineering coursework, and had two internship
+                    experiences in the automotive industry. Recently, I have attended two in-person hackathons and plan to
+                    hunt for more! I really enjoy developing projects both independently and for class, and I'm constantly
+                    looking for new things to create.
+                </p>
+                <p>
+                    In my spare time, I love to play soccer, go to the gym, and hang out with my friends. During my time in
+                    high school, I was lucky to be part of the Varsity Soccer All-State First Team. I also enjoy playing the
+                    guitar, listening to music, and watching TV (a lot!). Recently I've gotten into the habit of reading
+                    more and more. My favorite types of books are fiction and self-improvement. Currently, I'm working my
+                    way through the Game of Thrones series, and Atomic Habits.
+                </p>
+            </div>
+            
 
             <h2>
                 Skills:
@@ -130,26 +138,128 @@
                 </article>
             </div>
         </section>
+        
         <br>
-        <br>
-        <br>
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="cards">
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <img src="images/beacon.jpeg" alt="beacon project cover">
+                        </div>
+                        <div class="project-card-back">
+                            
+                                <h2>Beacon</h2>
+                                <div class="github">
+                                    <a href="https://github.com/xXnoahknownasnpqXx/Beacon" target="_blank">
+                                        <img class="imgs" src="images/github_white.png" alt="github logo">
+                                    </a>
+                                </div>
+                                
+                            
+                            <p>I led a team of 5 members to create an Android App for our Sophomore Project.
+                                The application utilizes a realtime database through Firebase Database, to maintain users engaged with
+                                real time updates. It is an app catered for small local musicians, trying to promote their events, using
+                                a location-based feed for every user. Based on where you are, your feed will display to you the upcoming
+                                events around the area.
+                            </p>
+                            <div class="tag">Java</div>
+                            <div class="tag">Android Studio</div>
+                            <div class="tag">XML</div>
+                            <div class="tag">Mobile Dev</div>
+                            <div class="tag">UI/UX</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <img src="images/war.jpeg" alt="war project cover">
+                        </div>
+                        <div class="project-card-back">
+                            <h2>War</h2>
+                                <div class="github">
+                                    <a href="https://github.com/rkhoury11/UpdatedWar" target="_blank">
+                                        <img class="imgs" src="images/github_white.png" alt="github logo">
+                                    </a>
+                                </div>
+                            <p>As my first individual project, I created a board game using the JavaFX GUI.
+                                War is a game inspired by Risk, which I loved to play as a kid, and wanted to make my own
+                                digitalized version, with a foucs on user interface and experience. I also leveraged
+                                my previous knowledge of Adobe Photoshop to create a visually appealing, and functional, world map.
+                            </p>
+                            <div class="tag">Java</div>
+                            <div class="tag">JavaFX</div>
+                            <div class="tag">FXML</div>
+                            <div class="tag">Adobe Photoshop</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <img src="images/website.png" alt="personal portfolio cover">
+                        </div>
+                        <div class="project-card-back">
+                            <h2>Portfolio Website</h2>
+                                <div class="github">
+                                    <a href="https://github.com/rkhoury11/Personal-Portfolio" target="_blank">
+                                        <img class="imgs" src="images/github_white.png" alt="github logo">
+                                    </a>
+                                </div>
+                            <p>Over the Winter of 2024, I worked on my personal website, as a way to learn the fundamentals of CSS, HTML,
+                                and JavaScript. I focused mainly on trying to encapsulate all my professional and academic acheivements,
+                                as well as myself as a whole using creative design and styling. In the future,
+                                I intend to incorporate some features using React and NodeJs as I learn them.
+                            </p>
+                            <div class="tag">HTML</div>
+                            <div class="tag">CSS</div>
+                            <div class="tag">JavaScript</div>
+                            <div class="tag">UI/UX</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
 
 
-    <footer>
+    <footer id="links">
+
+        
+            
+            
+        
         <div class="logos">
+            <h2>Contact Me | Download My Resume | Links</h2>
+
+            <img id="email" class="imgs" src="images/email.jpeg" alt="email icon">
+        
+            <a href="resume.pdf" download="Rafael-Khoury-resume.pdf" class="icon">
+                <img id="resume" class="imgs" src="images/resume.jpeg" alt="resume icon">
+            </a>
+            
+            
             <a href="https://www.linkedin.com/in/rafael-khoury-919608242/" target="_blank">
-                <img class="imgs" src="images/linkedin_logo.png" alt="linkedin logo">
+                <img id="linkedin" class="imgs" src="images/linkedin_logo.png" alt="linkedin logo">
             </a>
 
             <a href="https://www.github.com/rkhoury11" target="_blank">
-                <img class="imgs" src="images/github_logo.png" alt="linkedin logo">
+                <img id="github" class="imgs" src="images/github_logo.png" alt="github logo">
             </a>
+
+            
+
+            
         </div>
 
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 
